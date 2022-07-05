@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title{
+        @apply bg-black text-white text-center py-2 text-3xl font-bold;
+    }
+    .sub-title{
+        @apply text-center text-2xl font-bold text-red-500 py-4;
+    }
+}
