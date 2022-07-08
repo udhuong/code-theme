@@ -2170,6 +2170,8 @@ __webpack_require__.r(__webpack_exports__);
 var OnePiece = {
   init: function init() {
     this.openMenu(); // this.detectMobile();
+
+    this.toggleMap();
   },
   openMenu: function openMenu() {
     $('.js-open-menu').on('click', function (e) {
@@ -2194,6 +2196,20 @@ var OnePiece = {
     if (!mobileCheck) {
       window.location = '/';
     }
+  },
+  toggleMap: function toggleMap() {
+    $('.js-show-map').on('click', function (e) {
+      e.preventDefault();
+      var $this = $(this),
+          imgMap = $this.attr('href');
+      $('#wrap-map').remove();
+      var html = "\n                <div class=\"fixed w-[calc(100%-5px)] top-[100px] shadow-2xl\" id=\"wrap-map\">\n                    <img src=\"".concat(imgMap, "\"/>\n                    <a href=\"#\" class=\"absolute top-3 right-3 shadow-2xl js-close-map\"> <img src=\"images/close.svg\"/></a>\n                </div>\n            ");
+      $('body').append(html);
+    });
+    $('body').on('click', '.js-close-map', function (e) {
+      e.preventDefault();
+      $('#wrap-map').remove();
+    });
   }
 };
 $(function () {

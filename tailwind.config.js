@@ -6,12 +6,14 @@ module.exports = {
     ],
     theme: {
         extend: {
-            red:{
-                500: '#DF0716'
-            },
-            yellow:{
-                500: '#EECE00'
-            },
+            colors: {
+                red:{
+                    500: '#e60013'
+                },
+                yellow:{
+                    500: '#EECE00'
+                },
+            }
         },
     },
     plugins: [

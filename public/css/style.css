@@ -144,11 +144,11 @@
 .brook .characters--right {
   width: 60%;
   right: -44px;
+  bottom: 412px;
 }
 
 .franky .characters {
   position: absolute;
-  top: -90px;
 }
 .franky .characters--left {
   left: -73px;

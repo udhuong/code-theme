@@ -76,7 +76,7 @@
         <span class="bg-red-500 text-white p-2 inline-block mb-5 text-2xl font-bold">スポット</span><br />
         <div>
             <x-guide-item desktop="true" :img="'images/num1.png'"
-                          title="キャラクターブースをOsakaMetro駅構内で見つよう!"
+                          title="キャラクターブースをOsakaMetro駅構内で見つけよう!"
                           content="スタンプラリー実施期間中、Osaka Metroの10駅 に「ONE PIECE FILM RED」登場キャラクターのフォトブースが出現!! " />
             <x-guide-item desktop="true" :img="'images/num2.png'"
                           title="QRコードをスマートフォンのフカメラで読み込んで<br/>スタンプを取得!!"

@@ -3,7 +3,7 @@
     <div class="title">
         <h1>クリア賞</h1>
     </div>
-    <div class="container px-6 pt-5 pb-36">
+    <div class="container px-6 pt-5 pb-36 mx-auto">
         <div class="text-center">
             <p class="font-bold text-[40px] leading-[1.1em] mb-5">ご応募を<br/>受け付けました。</p>
             <p class="font-bold text-2xl mb-5">当選は賞品の発送をもって<br/>かえさせていただきます。</p>
@@ -38,12 +38,6 @@
             <b>■お問い合せ</b><br/>
             当協会の個人情報の取扱に関するお問い合せは下記までご連絡ください。<br/>
             一般社団法人日本スタンプラリー協会<br/>
-            jsa-info＠stamprally.org　（送信時は＠を半角に変換して下さい）<br/><br/>
-
-            <div class="text-right">
-                以上<br/>
-                最終更新日　2018.12.1
-            </div>
         </div>
     </div>
 @stop

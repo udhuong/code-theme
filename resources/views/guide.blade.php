@@ -4,9 +4,9 @@
         <h1>参加方法</h1>
     </div>
     <h2 class="sub-title">QRコードが読み取れる<br/>スマートフォンをお持ちの方なら<br/>参加可能!! </h2>
-    <div class="container px-6 pb-28">
+    <div class="container px-6 pb-28 mx-auto">
         <x-guide-item :img="'images/num1.png'"
-                      title="キャラクターブースを<br/> OsakaMetro駅構内で見つよう!"
+                      title="キャラクターブースを<br/> OsakaMetro駅構内で見つけよう!"
                       content="スタンプラリー実施期間中、Osaka Metroの10駅 に「ONE PIECE FILM RED」登場キャラクターのフォトブースが出現!! "/>
         <x-guide-item :img="'images/num2.png'"
                       title="QRコードをスマートフォンの<br/>フカメラで読み込んで<br/>スタンプを取得!!"

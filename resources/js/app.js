@@ -5,6 +5,7 @@ var OnePiece = {
     {
         this.openMenu();
         // this.detectMobile();
+        this.toggleMap();
     },
     openMenu()
     {
@@ -37,6 +38,25 @@ var OnePiece = {
         if (!mobileCheck) {
             window.location = '/';
         }
+    },
+    toggleMap() {
+        $('.js-show-map').on('click', function (e) {
+            e.preventDefault();
+            let $this = $(this),
+                imgMap = $this.attr('href');
+            $('#wrap-map').remove();
+            let html = `
+                <div class="fixed w-[calc(100%-5px)] top-[100px] shadow-2xl" id="wrap-map">
+                    <img src="${imgMap}"/>
+                    <a href="#" class="absolute top-3 right-3 shadow-2xl js-close-map"> <img src="images/close.svg"/></a>
+                </div>
+            `;
+            $('body').append(html);
+        });
+        $('body').on('click', '.js-close-map', function (e) {
+            e.preventDefault();
+            $('#wrap-map').remove();
+        });
     },
 }
 $(function () {
