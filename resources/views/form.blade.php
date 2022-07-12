@@ -3,7 +3,7 @@
     <div class="title">
         <h1>クリア賞</h1>
     </div>
-    <div class="container px-6 pt-5 pb-36 mx-auto">
+    <div class="container px-3 pt-5 pb-36 max-w-tab">
         <h2 class="text-[22px] font-bold mb-5">下記全てを記入してご応募ください。</h2>
         <form method="post" action="">
             <div class="border-b-2 pb-3 mb-3 border-dashed">
@@ -28,6 +28,7 @@
                 <x-input-text label="参加方法" name=""/>
             </div>
             <div>
+                <h2 class="text-[22px] font-bold mt-5">アンケート</h2>
                 @php
                     $q1 = ['Osaka Metro／大阪シティバス', 'JR／その他私鉄', '公共交通機関を利用していない' ];
                     $q2 = ['定期券','１日乗車券','PiTaPa','PiTaPa以外のIC乗車券','きっぷ','利用していない'];

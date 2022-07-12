@@ -1,9 +1,11 @@
 @extends('master')
-@section('content')
+@section('heading')
     <div class="title">
         <h1>賞品応募</h1>
     </div>
-    <div class="container px-6 pt-5 pb-36 text-center mx-auto">
+@endsection
+@section('content')
+    <div class="container px-3 pt-5 pb-36 text-center max-w-tab">
         <span class="inline-flex items-center font-bold text-red-500 text-[38px]"><img src="{{ asset('images/icon-gift.png') }}" class="mr-1"> 参加賞</span>
         <p class="font-bold text-2xl">スタンプ5個で参加賞引き換え！</p>
         <a href="#" class="btn btn-gray mt-1 mb-3">交換済</a>

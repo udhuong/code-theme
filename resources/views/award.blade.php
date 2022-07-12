@@ -3,7 +3,7 @@
     <div class="title">
         <h1>クリア賞</h1>
     </div>
-    <div class="container px-6 pt-5 pb-36 mx-auto">
+    <div class="container px-3 pt-5 pb-36 max-w-tab">
         <div class="text-center">
             <p class="font-bold text-[40px] leading-[1.1em] mb-5">ご応募を<br/>受け付けました。</p>
             <p class="font-bold text-2xl mb-5">当選は賞品の発送をもって<br/>かえさせていただきます。</p>

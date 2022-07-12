@@ -9,9 +9,9 @@
             </div>
         </div>
     </div>
-    <div class="container px-6 overflow-hidden h-[calc(100vh-45px-96px)] mx-auto">
-        <div class="font-bold uppercase text-red-500 text-[56px] text-center whitespace-nowrap">STAMP GET!!</div>
-        <img src="{{ asset('images/stamp.png') }}" class="object-contain mx-auto block" />
+    <div class="container px-3 overflow-hidden h-[calc(100vh-45px-96px)] mx-auto">
+        <div class="font-bold uppercase text-red-500 text-[48px] md:text-[96px] text-center whitespace-nowrap">STAMP GET!!</div>
+        <img src="{{ asset('images/stamp.png') }}" class="object-contain mx-auto block md:w-[470px] lg:w-[500px]" />
         @switch($char)
             @case('zoro')
             <div class="h-full relative zoro">

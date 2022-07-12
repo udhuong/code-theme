@@ -13,7 +13,10 @@ module.exports = {
                 yellow:{
                     500: '#EECE00'
                 },
-            }
+            },
+            container: {
+                center: true,
+            },
         },
     },
     plugins: [

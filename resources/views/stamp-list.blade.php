@@ -1,9 +1,11 @@
 @extends('master')
-@section('content')
+@section('heading')
     <div class="title">
         <h1>スタンプ一覧</h1>
     </div>
-    <div class="container px-3 md:px-6 pb-28">
+@endsection
+@section('content')
+    <div class="container px-3 md:px-6 pb-28 max-w-[454px] mx-auto">
         <h2 class="sub-title">スタンプ5個で参加賞ゲット!!<br/>10個集めるとクリア賞に応募可能!</h2>
         <div class="relative text-center mt-[50px]">
             <a href="#" class="stamp-item active">アイナビ</a>

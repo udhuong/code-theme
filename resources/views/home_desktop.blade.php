@@ -1,10 +1,13 @@
-<div class="container max-w-[767px] mx-auto">
+<div class="container max-w-tab mx-auto">
     <img src="{{ asset('images/banner.jpg') }}" class="object-contain" />
 </div>
-<div class="container max-w-[767px] mx-auto">
+<div class="container max-w-tab mx-auto">
     <section class="px-5">
-        <h2 class="sub-title py-5 mb-3">
-            <span class="bg-red-500 text-white p-2 mr-2">スポット</span>Osaka metro全10ヵ所の駅構内に登場キャラクターが出現！</h2>
+        <div class="flex items-center mb-3">
+            <span class="bg-red-500 text-white p-2 mr-2 whitespace-nowrap">スポット</span>
+            <h2 class="sub-title py-5 text-left">
+                Osaka metro全10ヵ所の駅構内に登場キャラクターが出現！</h2>
+        </div>
         <div class="relative grid grid-rows-4 grid-flow-col gap-x-4 gap-y-2">
             <x-spot-item desktop="true" title="四つ橋線" intro="西梅田駅 " />
             <x-spot-item desktop="true" title="四つ橋線" intro="肥後橋駅" />
@@ -36,39 +39,38 @@
                 <div class="mb-5">
                     <span class="text-yellow-500 text-3xl">S賞</span><span>。。。</span><span class="text-xl">20名</span>
                     <p>「ONE PIECE FILM RED」</p>
-                    <p class="text-xl">オリジナルほうろうフックマグ</p>
+                    <p class="text-lg">オリジナルほうろうフックマグ</p>
                 </div>
                 <div class="mb-5">
                     <span class="text-yellow-500 text-3xl">A賞</span><span>。。。</span><span class="text-xl">50名</span>
                     <p>「ONE PIECE FILM RED」</p>
-                    <p class="text-xl">オリジナルレザーバスケース</p>
+                    <p class="text-lg">オリジナルレザーバスケース</p>
                 </div>
                 <div>
                     <span class="text-yellow-500 text-3xl">B賞</span><span>。。。</span><span class="text-xl">50名</span>
-                    <p class="text-xl">「ONE PIECE FILM RED」B2ポスタ</p>
+                    <p class="text-lg">「ONE PIECE FILM RED」Ｂ２ポスター</p>
                 </div>
             </div>
             <div class="bg-gray-300">
             </div>
         </div>
-        <div class="flex items-center">
-            <img src="{{ asset('images/wrap-text-white.png') }}" class="mr-5 w-[200px]">
-            <div class="grid grid-cols-3 gap-6 text-white">
-                <div>
-                    <p>■■■■■■■</p>
-                    <p>■■■■■■■</p>
-                    <p>■■■■■■■</p>
-                </div>
-                <div>
-                    <p>■■■■■■■</p>
-                    <p>■■■■■■■</p>
-                    <p>■■■■■■■</p>
-                </div>
-                <div>
-                    <p>■■■■■■■</p>
-                    <p>■■■■■■■</p>
-                    <p>■■■■■■■</p>
-                </div>
+        <div class="text-white">
+            <img src="{{ asset('images/wrap-text-white.png') }}" class="mr-5 w-[200px] mb-8">
+            <div class="text-base mb-3">
+                <p class="mb-5 border-b border-dashed border-white pb-5 text-sm"><b class="text-base">梅田ブルク７（７階インフォメーション、シアター入場口）</b><br/>
+                    最寄り駅：御堂筋線・梅田駅／谷町線・東梅田駅／四つ橋線・西梅田駅<br/>
+                    <a class="text-yellow-500" href="https://tjoy.jp/umeda_burg7/access">大阪市北区梅田1-12-6 E-MAビル7F<img src="{{ asset('images/external_yellow.svg') }}" class="h-[15px] inline-block ml-[5px] mb-[3px]"/></a></p>
+                <p class="mb-5 border-b border-dashed border-white pb-5 text-sm"><b class="text-base">なんばパークシネマ（チケット売り場）</b><br/>
+                    最寄り駅：御堂筋線／千日前線　なんば駅<br/>
+                    <a class="text-yellow-500" href="https://www.parkscinema.com/site/namba/access.html">大阪市浪速区難波中2-10-70なんばパークス8F<img src="{{ asset('images/external_yellow.svg') }}" class="h-[15px] inline-block ml-[5px] mb-[3px]"/> </a>
+                </p>
+                <p class="mb-5 border-b border-dashed border-white pb-5 text-sm"><b class="text-base">イオンシネマシアタス心斎橋（※確認中）</b><br/>
+                    最寄り駅：御堂筋線／長堀鶴見緑地線　心斎橋駅<br/>
+                    <a class="text-yellow-500" href="https://www.aeoncinema.com/theater/access/81089_access.html">大阪市中央区心斎橋筋一丁目8-3心斎橋パルコ12階<img src="{{ asset('images/external_yellow.svg') }}" class="h-[15px] inline-block ml-[5px] mb-[3px]"/></a></p>
+                <p class="text-sm"><b class="text-base">あべのアポロシネマ（ルシアスビル４階シネマグッズコーナー）</b><br/>
+                    最寄り駅：御堂筋線／谷町線　天王寺駅<br/>
+                    <a class="text-yellow-500" href="https://www.kin-ei.co.jp/cgi-bin/pc/static.cgi?tgttmp=access/index">大阪市阿倍野区阿倍野筋1丁目5番1号<img src="{{ asset('images/external_yellow.svg') }}" class="h-[15px] inline-block ml-[5px] mb-[3px]"/></a>
+                </p>
             </div>
         </div>
     </section>
@@ -79,23 +81,26 @@
                           title="キャラクターブースをOsakaMetro駅構内で見つけよう!"
                           content="スタンプラリー実施期間中、Osaka Metroの10駅 に「ONE PIECE FILM RED」登場キャラクターのフォトブースが出現!! " />
             <x-guide-item desktop="true" :img="'images/num2.png'"
-                          title="QRコードをスマートフォンのフカメラで読み込んで<br/>スタンプを取得!!"
-                          content="キャラクターブース毎にスタンプを1個ゲットできます!もちろんキャラクターとの撮影も楽しんでね!<br/>
- ※次のスポットでQRを読み込む場合、メニューバーの「スキャン」ではなく改めてカメラから読み直してください。<br/>
+                          title="QRコードをスマートフォンのフカメラで読み込<br/>んでスタンプを取得!!"
+                          content="キャラクターブース毎にスタンプを1個ゲットできます!もちろんキャラクター<br/>との撮影も楽しんでね!<br/>
+ ※次のスポットでQRを読み込む場合、メニューバーの「スキャン」ではな<br/>く改めてカメラから読み直してください。<br/>
  ※コードリーダー上などの一時的なブラウザ機能ではスタンプを 獲得できません。<br/>
  ※標準ブラウザへ遷移してスタンプを獲得してください。<br/>
  ※撮影したQRコードをSNSへ投稿することはご遠慮ください。" />
             <x-guide-item desktop="true" :img="'images/num3.png'"
                           title="スタンプ5個で参加賞に引き換え可能!!"
-                          content="スタンプを5個集めたら、参加賞引換場所でスタン プ一覧画面をスタッフに見せよう!! <br/>
-参加賞として■■■■■■■■を進呈します!!
+                          content="スタンプを5個集めたら、参加賞引換場所でスタン <br/>プ一覧画面をスタッフに見せよう!! <br/>
+参加賞として参加賞の景品は「オリジナルステッカー」<br/>でしたを進呈します!!
 " />
             <x-guide-item desktop="true" :img="'images/num4.png'"
                           title="スタンプ10個でクリア賞に応募可能!! "
                           content="スタンプが10個集まったら、クリア賞へ応募可能!! メニューから「賞品応募」へお進みください。 " />
         </div>
-        <h2 class="sub-title pt-5 pb-0 mb-3 text-black">
-            <span class="bg-red-500 text-white p-2 mr-2">スポット</span>Osaka metro全10ヵ所の駅構内に登場キャラクターが出現！</h2>
+        <div class="flex items-center">
+            <span class="bg-red-500 text-white p-2 mr-2 whitespace-nowrap">スポット</span>
+            <h2 class="sub-title pt-5 pb-0 mb-3 text-black text-left">
+                Osaka metro全10ヵ所の駅構内に登場キャラクターが出現！</h2>
+        </div>
         <img src="{{ asset('images/phone.png') }}" class="absolute right-[30px] top-44 w-[120px]" />
         <img src="{{ asset('images/treasure.png') }}" class="absolute right-[30px] top-[22rem] w-[180px]" />
         <p class="text-sm">「ONE PIECE FILM RED」</p>
@@ -104,8 +109,8 @@
     <section class="mx-5 border-4 border-red-500 p-5 flex justify-between gap-2">
         <div>
             <p class="text-2xl font-bold">「ONE PIECE FILM RED」</p>
-            <p class="text-2xl font-bold">Osaka Metro デジタルスタンプラリーへのご参加は</p>
-            <p class="text-[40px] font-bold"><span class="text-red-500">1日乗車券</span>のご利用がオススメ!</p>
+            <p class="text-xl font-bold">Osaka Metro デジタルスタンプラリーへのご参加は</p>
+            <p class="text-[38px] font-bold"><span class="text-red-500">1日乗車券</span>のご利用がオススメ!</p>
             <p class="text-xl font-bold">■大人：800円（土日祝600円）/■小人：300円</p>
             <ul class="text-[11px]">
                 <li>●Osaka Metro・大阪シティバス前線(※)が1日乗り放題!</li>
@@ -117,7 +122,7 @@
         <img src="{{ asset('images/poster.png') }}" class="w-[140px] object-contain" />
     </section>
 </div>
-<footer class="container max-w-[767px] mx-auto">
+<footer class="container max-w-tab mx-auto">
     <section class="px-5 pt-3 flex gap-2 items-center font-bold">
         <div class="text-[9px]">
             <p>Osaka Metro・シティバス案内コール</p>

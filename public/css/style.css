@@ -26,6 +26,11 @@
   top: -55px;
   margin: 0 15px 15px;
 }
+@media (max-width: 361px) {
+  .stamp-item.special {
+    margin: 0 10px 15px;
+  }
+}
 .stamp-item.active {
   background-image: url("../images/stamp-active.png");
   font-size: 0;
@@ -53,22 +58,33 @@
 .luffy .characters {
   position: absolute;
   width: 85%;
-  bottom: 120px;
+  top: 50%;
+  left: 50%;
+}
+@media (max-width: 375px) {
+  .luffy .characters {
+    top: 36%;
+  }
 }
 .luffy .characters--left {
-  left: -85px;
+  transform: translate(-80%, -50%);
 }
 .luffy .characters--right {
-  right: -55px;
+  transform: translate(-30%, -50%);
 }
 
 .zoro .characters {
   position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@media (max-width: 375px) {
+  .zoro .characters {
+    top: 36%;
+  }
 }
 .zoro .characters--left {
-  bottom: 65px;
-  left: -70px;
-  width: 95%;
+  transform: translate(-75%, -50%);
 }
 .zoro .characters--right {
   width: 60%;
@@ -78,20 +94,26 @@
 
 .chopper .characters {
   position: absolute;
+  width: 85%;
+  top: 53%;
+  left: 50%;
+}
+@media (max-width: 375px) {
+  .chopper .characters {
+    top: 43%;
+  }
 }
 .chopper .characters--left {
-  left: -55px;
-  width: 64%;
-  bottom: 386px;
+  transform: translate(-103%, -118%);
+  width: 60%;
 }
 .chopper .characters--right {
-  right: -148px;
-  width: 100%;
-  bottom: 208px;
+  transform: translate(0%, -80%);
 }
 
 .nami .characters {
-  position: absolute;
+  position: fixed;
+  width: 85%;
 }
 .nami .characters--left {
   left: -33px;
@@ -99,18 +121,21 @@
   width: 171px;
 }
 .nami .characters--right {
-  width: 85%;
-  right: -75px;
-  bottom: -24px;
+  left: 50%;
+  transform: translateX(-10%);
+  top: 56%;
+  width: 65%;
 }
 
 .sanji .characters {
-  position: absolute;
+  position: fixed;
+  width: 85%;
 }
 .sanji .characters--left {
-  width: 90%;
-  left: -40px;
-  bottom: 42px;
+  left: 50%;
+  transform: translateX(-70%);
+  top: 55%;
+  width: 70%;
 }
 .sanji .characters--right {
   width: 60%;
@@ -119,7 +144,8 @@
 }
 
 .robin .characters {
-  position: absolute;
+  position: fixed;
+  width: 85%;
 }
 .robin .characters--left {
   left: -33px;
@@ -127,18 +153,20 @@
   width: 180px;
 }
 .robin .characters--right {
-  max-width: 418px;
-  right: -45px;
-  bottom: 3px;
+  left: 50%;
+  transform: translateX(-40%);
+  top: 56%;
+  width: 91%;
 }
 
 .brook .characters {
-  position: absolute;
+  position: fixed;
   width: 85%;
 }
 .brook .characters--left {
-  left: -166px;
-  bottom: 6px;
+  left: 50%;
+  transform: translateX(-90%);
+  top: 50%;
   width: 100%;
 }
 .brook .characters--right {
@@ -148,7 +176,8 @@
 }
 
 .franky .characters {
-  position: absolute;
+  position: fixed;
+  width: 85%;
 }
 .franky .characters--left {
   left: -73px;
@@ -156,17 +185,21 @@
   width: 200px;
 }
 .franky .characters--right {
-  right: -95px;
-  bottom: 299px;
+  left: 50%;
+  transform: translateX(-16%);
+  top: 56%;
+  width: 91%;
 }
 
 .shanks .characters {
-  position: absolute;
+  position: fixed;
+  width: 85%;
 }
 .shanks .characters--left {
-  left: -110px;
-  bottom: -20px;
-  max-width: 530px;
+  left: 50%;
+  transform: translateX(-60%);
+  top: 55%;
+  width: 100%;
 }
 .shanks .characters--right {
   width: 50%;
@@ -175,7 +208,8 @@
 }
 
 .jinbe .characters {
-  position: absolute;
+  position: fixed;
+  width: 85%;
 }
 .jinbe .characters--left {
   left: -33px;
@@ -184,7 +218,53 @@
   z-index: -1;
 }
 .jinbe .characters--right {
-  right: -125px;
-  bottom: 120px;
-  max-width: 422px;
+  left: 50%;
+  transform: translateX(-16%);
+  top: 56%;
+  width: 91%;
+}
+
+.max-w-tab {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.max-w-mb {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  display: none;
+  opacity: 1;
+  z-index: 999;
+}
+
+.main-popup {
+  top: 25%;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+}
+
+.main-popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.main-popup .close {
+  position: absolute;
+  top: 2px;
+  right: 12px;
 }

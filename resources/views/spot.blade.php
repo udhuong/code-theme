@@ -4,7 +4,7 @@
         <h1>スポット一覧</h1>
     </div>
     <h2 class="sub-title">Osaka metro全10ヵ所の<br/>駅構内に登場キャラクターが出現！</h2>
-    <div class="container px-6 pb-36 mx-auto">
+    <div class="container px-3 pb-36 max-w-tab">
         <x-spot-item :map="asset('images/map/f1.png')" title="四つ橋線" intro="西梅田駅 "/>
         <x-spot-item :map="asset('images/map/f2.png')" title="四つ橋線" intro="なんば駅"/>
         <x-spot-item :map="asset('images/map/f3.png')" title="御堂筋線・長堀鶴見緑地線" intro="心斎橋駅"/>
