@@ -6,7 +6,4 @@
     .title{
         @apply bg-black text-white text-center py-2 text-3xl font-bold;
     }
-    .sub-title{
-        @apply text-center text-[21px] md:text-2xl font-bold text-red-500 py-4 px-2;
-    }
 }
